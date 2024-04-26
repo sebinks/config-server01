@@ -1,0 +1,24 @@
+
+server:
+    port: 8081
+spring:
+    datasource:
+        password: root
+        url: jdbc:mysql://localhost:3306/reservation_db?useSSL=false
+        username: root
+    jpa:
+        hibernate:
+            ddl-auto: update
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.MySQLDialect
+        show-sql: true
+      
+# Test Details for Development Environment
+test:
+  details: Reservation service details for dev environment [From GitHub]
+  engineer: Sebin
+  department: Development Testing [Reservation service]
+  engineerContact:
+    email: seb.dev@example.com
+    phone: 123-456-7890       
