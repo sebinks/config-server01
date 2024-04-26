@@ -1,0 +1,22 @@
+server:
+    port: 8082
+spring:
+    datasource:
+        password: password
+        url: jdbc:mysql://localhost:3306/employeesdatabase?useSSL=false
+        username: root
+    jpa:
+        hibernate:
+            ddl-auto: update
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.MySQLDialect
+                
+# Test Details for Development Environment
+test:
+  details: Room service details for dev environment [From GitHub]
+  engineer: Sebin
+  department: Development Testing
+  engineerContact:
+    email: seb.dev@example.com
+    phone: 123-456-7890                
